@@ -9,7 +9,7 @@ server.use(express.json());
 server.use(logger);
 
 server.get('/', (req, res) => {
-  res.send(`<h2>Heck</h2>`);
+  res.send(`<h2>/users or /posts</h2>`);
 });
 
 server.use('/users', userRouter);
